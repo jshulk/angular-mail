@@ -1,5 +1,19 @@
 <script src = "/js/mail/libs/angular-loader.js"></script>
 
-<div ui-view ></div>
+
+<div class="container">
+    
+    <div ui-view="actions">
+        <!-- this will hold the actions bar -->
+    </div>
+
+
+    <hr />
+
+    <div class="row" ui-view = "sidebar">
+        
+    </div>
+</div>
+
 
 <script src = '/js/mail/libs/require.js' data-main = '/js/mail/main.js'></script>

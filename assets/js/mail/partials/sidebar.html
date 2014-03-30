@@ -1,0 +1,20 @@
+ <div class="col-sm-3 col-md-2"  >
+           
+        
+ <a href="#" class="btn btn-danger btn-sm btn-block" role="button">COMPOSE</a>
+            <hr />
+            <ul class="nav nav-pills nav-stacked">
+                <li ng-repeat = "item in sidebarOptions"
+                    ng-class="{ active : (item == selectedItem) }">
+                    <a ng-href="#/mail/{{item.type}}"
+                        
+                    >
+                        <span class="badge pull-right">{{item.count}}</span> {{item.label}} 
+                    </a>
+                </li>
+            </ul>
+</div>
+
+<div class="col-sm-9 col-md-10" ui-view = 'content'>
+
+</div>
