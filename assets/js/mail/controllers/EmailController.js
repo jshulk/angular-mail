@@ -1,5 +1,5 @@
 define(["mail"], function(app){
-	return app.controller('EmailController', function($scope, $stateParams){
+	return app.controller('EmailController', function($scope, $stateParams, $state){
 		
 		$scope.emails = [
 			{ id : 1, subject : "Dummy Email", title : "This is a big title", content: "Hello, How are you ?", starred:true, type : 'inbox' },
@@ -10,6 +10,9 @@ define(["mail"], function(app){
 
 		];
 
+		console.log('$stateParams');
+		console.log($stateParams);
+		console.log($state);
 		$scope.$emit('change:mailType', $stateParams.type );
 		
 
