@@ -24,7 +24,13 @@ define(["mail"], function(app){
 				if( mailType.type == selectedType )
 					$scope.selectedItem = mailType;
 			});
-		}
+		};
+
+		$scope.showContent = function(){
+			$scope.$broadcast("toggle:content", {});
+		};
+
+		console.log('sidebar controller');
 
 	});
 });

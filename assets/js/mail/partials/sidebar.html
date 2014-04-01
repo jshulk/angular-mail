@@ -6,8 +6,8 @@
             <ul class="nav nav-pills nav-stacked">
                 <li ng-repeat = "item in sidebarOptions"
                     ng-class="{ active : (item == selectedItem) }">
-                    <a ng-href="#/mail/{{item.type}}"
-                        
+                    <a ui-sref="mail.type({ type : item.type })"
+                        ng-click = "showContent()"
                     >
                         <span class="badge pull-right">{{item.count}}</span> {{item.label}} 
                     </a>
