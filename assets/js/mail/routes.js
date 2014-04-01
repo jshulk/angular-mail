@@ -7,6 +7,7 @@ define([
 		"controllers/EmailController",
 		"controllers/SidebarController",
 		"controllers/ShowEmailController"
+		
 		], function(app, actionsTemplate, sidebarTemplate, contentTemplate, showMailTemplate ){
 
 	return app.config(function($stateProvider, $urlRouterProvider){
