@@ -26,11 +26,11 @@ define(["mail"], function(app){
 			});
 		};
 
-		$scope.showContent = function(){
-			$scope.$broadcast("toggle:content", {});
-		};
 
-		console.log('sidebar controller');
+
+
+
+		console.log('sidebar controller initialized');
 
 	});
 });

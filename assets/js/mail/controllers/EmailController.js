@@ -12,15 +12,17 @@ define(["mail"], function(app){
 
 		$scope.hideTabs = false;
 
-		console.log('$stateParams');
-		console.log($stateParams);
-		console.log($state);
-
 		$scope.$on("toggle:content", function(event, data){
 			$scope.hideTabs = false;
 		});
 
 		$scope.$emit('change:mailType', $stateParams.type );
+
+		$scope.$on("$stateChangeStart", function(event, toState, toParams, fromState, fromParams){
+			if( toState.name == "mail.type" ){
+				$scope.hideTabs = false;
+			}
+		});
 		
 
 		

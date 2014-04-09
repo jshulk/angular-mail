@@ -5,5 +5,11 @@ define(["mail"], function(app){
 			$scope.$parent.hideTabs = true;
 		console.log('called show email controller');
 
+		$scope.$on("$stateChangeStart", function(event, toState, toParams, fromState, fromParams){
+			// console.log('toState show email' );
+			// console.dir(toState);
+			// console.log('fired state change start on show email controller');
+		});
+
 	});
 });

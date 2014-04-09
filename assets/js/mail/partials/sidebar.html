@@ -7,7 +7,7 @@
                 <li ng-repeat = "item in sidebarOptions"
                     ng-class="{ active : (item == selectedItem) }">
                     <a ui-sref="mail.type({ type : item.type })"
-                        ng-click = "showContent()"
+                        
                     >
                         <span class="badge pull-right">{{item.count}}</span> {{item.label}} 
                     </a>
@@ -18,3 +18,6 @@
 <div class="col-sm-9 col-md-10" ui-view = 'content'>
 
 </div>
+
+<div ui-view ='compose' ></div>
+
