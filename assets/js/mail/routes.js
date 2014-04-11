@@ -4,10 +4,11 @@ define([
 		"text!partials/sidebar.html",
 		"text!partials/content.html",
 		"text!partials/show.html",
-		"text!partials/gmail_compose.html",
+		"text!partials/compose.html",
 		"controllers/EmailController",
 		"controllers/SidebarController",
-		"controllers/ShowEmailController"
+		"controllers/ShowEmailController",
+		"controllers/ComposeController"
 		
 		], function(app, actionsTemplate, sidebarTemplate, contentTemplate, showMailTemplate, composeTemplate ){
 
@@ -46,7 +47,8 @@ define([
 				url : '^/mail/:type/compose',
 				views: {
 					'compose@mail.type':{
-						template: composeTemplate
+						template: composeTemplate,
+						controller : 'ComposeController'
 					}
 				}
 

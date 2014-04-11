@@ -2,3 +2,41 @@ body{
 	padding-top : 60px;
 	padding-bottom : 30px;
 }
+
+
+.compose-window {
+  min-width: 500px;
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.compose-window .header {
+  background-color: #333;
+  color: white;
+}
+
+.compose-window div {
+  padding: 5px 5px;
+}
+
+.description {
+  margin: 10px 0;
+}
+
+
+
+.button-bar {
+  text-align: right;
+}
+
+.compose-window input[type=text] {
+  width: 100%;
+}
+
+.compose-window textarea {
+  width: 100%;
+  height: 100px;
+}

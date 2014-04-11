@@ -1,0 +1,18 @@
+<form ng-show="createNew" class = 'compose-window' >
+	<div class="header">New Message</div>
+	<div class="inner">
+		<div>
+			<input type = 'text' ng-model= 'newMail.to' placeholder= 'To' />
+		</div>
+		<div>
+			<input type = 'text' ng-model= 'newMail.subject' placeholder= 'Subject' />
+		</div>
+		<div>
+			<textarea ng-model = 'newMail.body' class = 'mail-body' ></textarea>
+		</div>
+
+		<div class="button-bar">
+			<input type = 'submit' value = 'Send' class = 'btn' />
+		</div>
+	</div>
+</form>
