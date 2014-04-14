@@ -6,6 +6,7 @@ body{
 
 .compose-window {
   min-width: 500px;
+  min-height : 400px;
   position: fixed;
   bottom: 0px;
   right: 10px;
@@ -26,17 +27,11 @@ body{
   margin: 10px 0;
 }
 
-
-
-.button-bar {
-  text-align: right;
-}
-
 .compose-window input[type=text] {
   width: 100%;
 }
 
 .compose-window textarea {
   width: 100%;
-  height: 100px;
+  height: 200px;
 }
