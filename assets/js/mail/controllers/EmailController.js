@@ -13,6 +13,7 @@ define(["mail"], function(app){
 		$scope.hideTabs = false;
 
 		$scope.$on("toggle:content", function(event, data){
+			console.log('captured toggle content event');
 			$scope.hideTabs = false;
 		});
 
@@ -20,6 +21,7 @@ define(["mail"], function(app){
 
 		$scope.$on("$stateChangeStart", function(event, toState, toParams, fromState, fromParams){
 			if( toState.name == "mail.type" ){
+				console.log('state changed to mail.type');
 				$scope.hideTabs = false;
 			}
 		});

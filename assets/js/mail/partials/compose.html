@@ -1,5 +1,8 @@
 <form ng-show="createNew" class = 'compose-window' >
-	<div class="header">New Message</div>
+	<div class="header">
+		New Message
+		<a ng-href = "#/mail/inbox" class = 'glyphicon glyphicon-remove pull-right'></a>
+	</div>
 	<div class="inner">
 		<div>
 			<input type = 'text' ng-model= 'newMail.to' placeholder= 'To' />
@@ -12,7 +15,7 @@
 		</div>
 
 		<div class="button-bar">
-			<input type = 'submit' value = 'Send' class = 'btn' />
+			<input type = 'submit' value = 'Send' class = 'btn btn-primary' />
 		</div>
 	</div>
 </form>
